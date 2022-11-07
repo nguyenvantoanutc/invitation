@@ -12,7 +12,7 @@ function LocationSection() {
                             <h2 className="main-font">Location</h2>
                             <p className="sub-title">
                                 <a
-                                    href={GOOGLE_MAPS_LINK_BRIDE}
+                                    href={GOOGLE_MAPS_LINK_GROOM}
                                     title="Click vào đây để đi đến Google Maps"
                                     target="_blank"
                                     rel="noreferrer"
@@ -25,7 +25,7 @@ function LocationSection() {
                             </p>
                             <p className="sub-title">
                                 <a
-                                    href={GOOGLE_MAPS_LINK_GROOM}
+                                    href={GOOGLE_MAPS_LINK_BRIDE}
                                     title="Click vào đây để đi đến Google Maps"
                                     target="_blank"
                                     rel="noreferrer"
