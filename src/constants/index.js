@@ -2,8 +2,8 @@
  * Link
  */
 export const GOOGLE_CALENDAR_LINK = `https://calendar.google.com/calendar/event?action=TEMPLATE&dates=20201003T040000Z%2F20201003T060000Z&text=Dinda+%26+Indra+Wedding&details=Dinda+%26+Indra+Wedding`;
-export const GOOGLE_MAPS_LINK_BRIDE = `https://www.google.com/maps/dir/19.8846406,105.7093754/19.884343,105.7095237/@19.8845158,105.7093092,20z/data=!4m2!4m1!3e3`;
-export const GOOGLE_MAPS_LINK_GROOM = `https://www.google.com/maps/dir/19.9192014,105.6644385,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3136f3e77d4c2b05:0xc028881d997d666a!2m2!1d105.6648934!2d19.9202868`;
+export const GOOGLE_MAPS_LINK_BRIDE = `https://www.google.com/maps/place/19%C2%B055'13.5%22N+105%C2%B039'53.6%22E/@19.920411,105.6626933,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x3136f3c2d6c7c1fb:0x1a74418b8ab9e6f2!2zVGhp4buHdSBDw7RuZywgVGhp4buHdSBIb8OhLCBUaGFuaCBIb8OhLCBWaeG7h3QgTmFt!3b1!8m2!3d19.9212923!4d105.6617813!3m5!1s0x0:0x932d76ead5423382!7e2!8m2!3d19.9204058!4d105.664882`;
+export const GOOGLE_MAPS_LINK_GROOM = `https://www.google.com/maps/place/19%C2%B053'01.7%22N+105%C2%B042'32.5%22E/@19.883799,105.7068343,17z/data=!3m1!4b1!4m14!1m7!3m6!1s0x3136f6c06fe65a65:0x539a6181c264102c!2zVGhp4buHdSBOZ3V5w6puLCBUaGnhu4d1IEhvw6EsIFRoYW5oIEhvw6EsIFZp4buHdCBOYW0!3b1!8m2!3d19.8845807!4d105.709377!3m5!1s0x0:0x779acf440682e102!7e2!8m2!3d19.8837937!4d105.7090229`;
 
 /**
  * Wedding time
