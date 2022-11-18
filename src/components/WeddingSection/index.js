@@ -38,13 +38,13 @@ function WeddingSection({isInvitation}) {
                         {isInvitation && (
                             <div className="col-md-10 col-md-offset-1">
                                 <WeddingInfoBox
-                                    title="Đám hỏi"
+                                    title="Lễ vu Quy"
                                     time="10:30"
                                     date="Ngày 22/12/2022 (Dương lịch) <br/> Ngày 30/11/2022 (Âm lịch)"
                                     description="TẠI NHÀ GÁI <br/> Thiệu Công, Thiệu Hóa, Thanh Hóa"
                                 />
                                 <WeddingInfoBox
-                                    title="Đám cưới"
+                                    title="Lễ thành hôn"
                                     time="10:30"
                                     date="Ngày 24/12/2022 (Dương lịch) <br/> Ngày 02/12/2022 (Âm lịch)"
                                     description="TẠI NHÀ TRAI <br/> Thiệu Nguyên, Thiệu Hóa, Thanh Hóa"

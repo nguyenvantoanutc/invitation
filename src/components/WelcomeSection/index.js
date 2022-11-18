@@ -1,11 +1,11 @@
 import React, {Fragment, useState} from 'react';
-import {object, string, bool, func} from 'prop-types';
-import {Link} from 'gatsby';
+import {bool, func, object, string} from 'prop-types';
 
 import WeddingImg from '@assets/images/wedding-logo.png';
 import CountContainer from './CountContainer';
 import ScrollToDown from './ScrollToDown';
-import {styWrapper, styHero, styBackground, styButtonWrapper} from './styles';
+import {styBackground, styButtonWrapper, styHero, styWrapper} from './styles';
+import SheetDB from 'sheetdb-js'
 
 const DELAY_TIME = 1500;
 
@@ -44,6 +44,24 @@ function WelcomeSection({location, guest, isInvitation, isAnonymousGuest, codeLi
         }
     };
 
+    const submitData = () => {
+        console.log("submitData");
+        SheetDB.read('https://sheetdb.io/api/v1/ptkmds3iusg55', {}).then(function (result) {
+            console.log(result);
+        }, function (error) {
+            console.log(error);
+        });
+
+        SheetDB.write('https://sheetdb.io/api/v1/ptkmds3iusg55', {
+            sheet: 'Invitation',
+            data: {code: '10', name: 'Test', member: 41, status: 'dsad'}
+        }).then(function (result) {
+            console.log(result);
+        }, function (error) {
+            console.log(error);
+        });
+    };
+
     const renderGuestSection = () => {
         if (isAnonymousGuest) return <h2 className="to-dearest-name">Dear Friends,</h2>;
 
@@ -78,9 +96,8 @@ function WelcomeSection({location, guest, isInvitation, isAnonymousGuest, codeLi
                             {isInvitation && (
                                 <div className="row" css={styButtonWrapper}>
                                     <div className="col-md-3">
-                                        <Link to={`/e-ticket?${codeLink}`}>
-                                            <button className="btn btn-default btn-block">Lihat e-Ticket</button>
-                                        </Link>
+                                        <button onClick={submitData} className="btn btn-default btn-block">Tham gia
+                                        </button>
                                     </div>
                                 </div>
                             )}

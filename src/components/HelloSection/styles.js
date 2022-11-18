@@ -33,7 +33,7 @@ export const styWrapper = css`
 
   @media screen and (max-width: 500px) {
     .sub-title {
-      font-size: 18px;
+      font-size: 20px;
       margin: 0 0 8px 0;
     }
 
