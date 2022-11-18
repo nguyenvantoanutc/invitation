@@ -1,6 +1,6 @@
 import React from 'react';
 import QRCode from 'react-qr-code';
-import { string } from 'prop-types';
+import {string} from 'prop-types';
 
 function QRCard({ name, code, desc }) {
   return (

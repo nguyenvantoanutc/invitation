@@ -3,7 +3,7 @@ import React from 'react';
 import MainLayout from '@components/Layout';
 import QRCard from '@components/QRCard';
 import useGuestData from '@/hooks/useGuestData';
-import { styWrapper } from '@components/QRCard/styles';
+import {styWrapper} from '@components/QRCard/styles';
 
 function GenerateQRPage() {
   const { data, loading } = useGuestData();

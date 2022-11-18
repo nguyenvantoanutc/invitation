@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {bool, object} from 'prop-types';
+import {object} from 'prop-types';
 
 import Bride from '@assets/images/p-dinda-2.jpg';
 import Groom from '@assets/images/p-indra.jpg';
@@ -8,7 +8,7 @@ import QRGroom from '@assets/images/qr-toan.jpg';
 
 import {styWrapper} from './styles';
 
-function HelloSection({isInvitation, guest}) {
+function HelloSection({guest}) {
     const finalSubtitle = '24-12-2022';
     const subtitle = '(Tức ngày 02 tháng 12 năm 2022)';
 
@@ -19,7 +19,7 @@ function HelloSection({isInvitation, guest}) {
                     <div className="row">
                         <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
                             <div
-                                className={isInvitation ? "col-md-6 col-sm-6 pd-invitation" : "col-md-12 col-sm-12"}>
+                                className={guest ? "col-md-6 col-sm-6 pd-invitation" : "col-md-12 col-sm-12"}>
                                 <div className="invitation text-center">
                                     <h2 className="main-font">Wedding</h2>
                                     <h3 className="sub-title main-font hs">Mr.Toan &amp; Mrs.Phuong</h3>
@@ -41,7 +41,7 @@ function HelloSection({isInvitation, guest}) {
                                     </p>
                                 </div>
                             </div>
-                            <div hidden={!isInvitation} className="col-md-6 col-sm-6 pd-invitation">
+                            <div hidden={!guest} className="col-md-6 col-sm-6 pd-invitation">
                                 <div className="invitation text-center">
                                     <h2 className="main-font">Invitation</h2>
                                     <h3 className="sub-title main-font hs">Mr.Toan &amp; Mrs.Phuong</h3>
@@ -72,6 +72,11 @@ function HelloSection({isInvitation, guest}) {
                             </div>
                             <div className="desc-groom">
                                 <h3 className="main-font">Nguyen Van Toan</h3>
+                                <p className="parent-name">
+                                    <a href="tel:+84393767196">
+                                        Gọi điện cho chú rể
+                                    </a>
+                                </p>
                                 <p className="parent-name parent-name__top">
                                     Bố: Nguyễn Văn Tư
                                     <br/>
@@ -94,10 +99,15 @@ function HelloSection({isInvitation, guest}) {
                             </div>
                             <div className="desc-bride">
                                 <h3 className="main-font">Hoang Thi Phuong</h3>
+                                <p className="parent-name">
+                                    <a href="tel:+84358833104">
+                                        Gọi điện cho cô dâu
+                                    </a>
+                                </p>
                                 <p className="parent-name parent-name__top">
                                     Bố: Hoàng Văn Bính
                                     <br/>
-                                    Mẹ: Nguyễn Thị Lại
+                                    Mẹ: Lê Thị Lại
                                     <br/>
                                     Thiệu Công, Thiệu Hóa, Thanh Hóa
                                 </p>
@@ -107,7 +117,7 @@ function HelloSection({isInvitation, guest}) {
                     </div>
                 </div>
             </div>
-            {!isInvitation ? (
+            {!guest ? (
                 <div id="fh5co-couple" className="fh5co-section-gray" css={styWrapper}>
                     <div className="container">
                         <div className="row">
@@ -136,7 +146,6 @@ function HelloSection({isInvitation, guest}) {
 
 HelloSection.propTypes =
     {
-        isInvitation: bool.isRequired,
         guest: object.isRequired
     }
 ;

@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { node } from 'prop-types';
-import { Helmet } from 'react-helmet';
+import {node} from 'prop-types';
+import {Helmet} from 'react-helmet';
 
 import Favicon from '@assets/images/dinda-indra.png';
-import { styWrapper } from './styles';
+import {styWrapper} from './styles';
 
 function LayoutTicket({ children }) {
   return (

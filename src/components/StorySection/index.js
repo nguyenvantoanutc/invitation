@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
+import React, {Fragment} from 'react';
 
 import StoryItem from './StoryItem';
-import { stories } from './stories-data';
+import {stories} from './stories-data';
 
 function StorySection() {
   const renderStories = () => {

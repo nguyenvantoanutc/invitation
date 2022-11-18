@@ -11,3 +11,9 @@ export const GOOGLE_MAPS_LINK_GROOM = `https://www.google.com/maps/place/19%C2%B
 export const EPOCH_START_EVENT = 1671814800;
 export const EPOCH_END_EVENT = 1671901200;
 export const UTC_WEDDING_TIME = 'Ngày 24 tháng 12 năm 2022';
+
+/***
+ * Link api sheetdb.io control google sheet
+ */
+export const SHEET_DATA_INVITATION = "https://script.google.com/macros/s/AKfycby0-iQ02onxAbe2CT0jReB_nOtZNgTQ5ymQJ7MmjxHY3ddAGysG2T9M-f1gaFy_vxIaUQ/exec";
+export const SHEET_DATA_CONFIRM = "https://script.google.com/macros/s/AKfycbx0bdwe61Oj6WC6lVnHPJ7OTv17wZRgDGR2hip6BJ357qY2if9hCkX9Lh1QVzBydIId-g/exec?code=VAS1&name=fdsfdafds&member=4&transport=1&wish=dsadsad";

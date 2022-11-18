@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import {css} from '@emotion/core';
 
 export const styWrapper = css`
   @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');

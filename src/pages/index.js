@@ -1,4 +1,4 @@
-import React, {useState, Fragment, useEffect} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import {object} from 'prop-types';
 import getQueryValue from '@helpers/getQueryValue';
 /**
@@ -16,25 +16,28 @@ import ConfirmationSection from '@components/ConfirmationSection';
 import FooterSection from '@components/FooterSection';
 // import CovidSection from '@components/Covid19';
 import FloatingMusic from '@components/FloatingMusic/Loadable';
-import useGuestData from "../hooks/useGuestData";
+import {SHEET_DATA_INVITATION} from "../constants";
+import axios from 'axios'
 
 function Home({location}) {
     const code = getQueryValue(location, 'code') || '';
-    const isInvitation = getQueryValue(location, 'type') === 'invitation';
     const [guest, setGuest] = useState({})
-    const {data, loading} = useGuestData();
-    const [isAnonymousGuest, setAnonymousGuest] = useState(guest && !isInvitation);
-    const [finalTicketLink, setFinalTicketLink] = useState('');
+    // const {data, loading} = useGuestData();
+    const [isAnonymousGuest, setAnonymousGuest] = useState(guest);
 
     const [showDetailContent, setShowDetailContent] = useState(false);
 
     useEffect(() => {
-        const item = data.find(item => item.code === code)
-        setGuest(item);
-        setAnonymousGuest(guest && !isInvitation)
-        setFinalTicketLink(`code=${code}&name=${item?item.name:''}`)
-        // const finalTicketLink = `code=${codeLink}&name=${guestName}`;
-    }, [data.length, loading, code])
+        axios.get(SHEET_DATA_INVITATION)
+            .then(response => {
+                if (response.data) {
+                    let result = response.data.data.filter(x => x.code === code);
+                    if (result)
+                        setGuest(result[0])
+                }
+            })
+        setAnonymousGuest(!guest)
+    }, [code, guest])
 
     const handleClickDetail = () => {
         setShowDetailContent(true);
@@ -45,15 +48,15 @@ function Home({location}) {
 
         return (
             <Fragment>
-                <HelloSection isInvitation={isInvitation} guest={guest}/>
-                <WeddingSection isInvitation={isInvitation}/>
+                <HelloSection guest={guest}/>
+                <WeddingSection/>
                 {/*{isInvitation && <CovidSection/>}*/}
-                {isInvitation && <LocationSection/>}
+                {guest && <LocationSection/>}
                 <StorySection/>
                 <PhotoSection/>
                 <WishesSection/>
-                <ConfirmationSection guest={guest} isInvitation={isInvitation} codeLink={finalTicketLink}/>
-                <FooterSection isInvitation={isInvitation}/>
+                <ConfirmationSection guest={guest}/>
+                <FooterSection guest={guest}/>
             </Fragment>
         );
     };
@@ -63,9 +66,6 @@ function Home({location}) {
             <WelcomeSection
                 guest={guest}
                 isAnonymGuest={isAnonymousGuest}
-                isInvitation={isInvitation}
-                location={location}
-                codeLink={finalTicketLink}
                 onClickDetail={handleClickDetail}
             />
             {renderDetailContent()}

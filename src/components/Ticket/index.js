@@ -1,9 +1,9 @@
 import React from 'react';
 import QRCode from 'react-qr-code';
-import { object } from 'prop-types';
-import { Link } from 'gatsby';
+import {object} from 'prop-types';
+import {Link} from 'gatsby';
 
-import { styWrapper } from './styles';
+import {styWrapper} from './styles';
 
 function TicketData({ guest, configData }) {
   return (

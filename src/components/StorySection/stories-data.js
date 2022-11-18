@@ -1,11 +1,9 @@
-import ImgKembaliBerjumpa from '@assets/images/p-kembali-berjumpa.jpg';
 import ImgJakartaKroasia from '@assets/images/p-jakarta-kroasia.jpg';
 import ImgBoarding from '@assets/images/p-boarding-smg.jpg';
 import ImgKembaliKeIndonesia from '@assets/images/p-kembali-ke-indonesia.jpg';
 import ImgNdodokLawang from '@assets/images/p-ndodok-lawang.jpg';
 import ImgFirstMeet from '@assets/images/s-first_meet.jpg';
 import ImgFirstGoOut from '@assets/images/s-first_go_out.jpg';
-
 
 
 export const stories = [

@@ -1,6 +1,6 @@
 import React from 'react';
-import { string, bool } from 'prop-types';
-import { styWrapperItem, styWithAnimation } from './styles';
+import {bool, string} from 'prop-types';
+import {styWithAnimation, styWrapperItem} from './styles';
 
 function WishesItem({ image, name, infoName, description, isActive }) {
   if (!isActive) return null;

@@ -1578,6 +1578,18 @@ form label {
     padding-right: 50px;
 }
 
+#fh5co-started .href {
+    height: 54px;
+    border: none !important;
+    background: #f14e95;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 #fh5co-started .form-inline .form-group {
     width: 100% !important;
     margin-bottom: 10px;

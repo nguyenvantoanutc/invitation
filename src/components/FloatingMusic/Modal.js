@@ -1,8 +1,8 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import { bool, func } from 'prop-types';
+import {Helmet} from 'react-helmet';
+import {bool, func} from 'prop-types';
 
-import { styWrapperModal } from './styles';
+import {styWrapperModal} from './styles';
 
 function ModalMusic({ isShow, onClickAction }) {
   if (!isShow) {

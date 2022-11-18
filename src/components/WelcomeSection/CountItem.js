@@ -1,6 +1,6 @@
 import React from 'react';
-import { number, string } from 'prop-types';
-import { styWrapperCount } from './styles';
+import {number, string} from 'prop-types';
+import {styWrapperCount} from './styles';
 
 function CountItem({ number, text }) {
   return (

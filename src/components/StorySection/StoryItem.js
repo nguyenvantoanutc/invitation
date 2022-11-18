@@ -1,5 +1,5 @@
 import React from 'react';
-import { string, bool } from 'prop-types';
+import {bool, string} from 'prop-types';
 
 function StoryItem({ image, title, date, description, isInverted }) {
   return (

@@ -30,7 +30,7 @@
     "react-image-gallery": "^1.0.7",
     "react-qr-code": "^1.0.2",
     "serve-static": "^1.15.0",
-    "sheetdb-js": "^1.0.3"
+    "axios": "0.18.1"
   },
   "devDependencies": {
     "eslint-config-jquery": "^3.0.0",

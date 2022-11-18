@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 
 import MainLayout from '@components/Layout';
 import Ticket from '@components/Ticket';
@@ -6,7 +6,7 @@ import Ticket from '@components/Ticket';
 import getQueryValue from '@helpers/getQueryValue';
 import useGuestData from '@/hooks/useGuestData';
 import useConfigData from '@/hooks/useConfigData';
-import { styTicket } from '@components/Ticket/styles';
+import {styTicket} from '@components/Ticket/styles';
 
 function ETicket({ location }) {
   const codeEticket = getQueryValue(location, 'code') || '';

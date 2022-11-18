@@ -1,5 +1,5 @@
-import { useState, useEffect, useCallback } from 'react';
-import { EPOCH_END_EVENT, EPOCH_START_EVENT } from '@/constants';
+import {useCallback, useEffect, useState} from 'react';
+import {EPOCH_END_EVENT, EPOCH_START_EVENT} from '@/constants';
 
 const INTERVAL_TIME = 1000;
 const DAY_PER_SECONDS = 86400;

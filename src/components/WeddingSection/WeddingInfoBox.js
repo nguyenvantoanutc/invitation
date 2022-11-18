@@ -1,5 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
+import {string} from 'prop-types';
 
 function WeddingInfoBox({ title, date, time, description }) {
   return (

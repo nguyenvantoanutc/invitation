@@ -1,15 +1,14 @@
 import React, {Fragment, useState} from 'react';
-import {bool, func, object, string} from 'prop-types';
+import {bool, func, object} from 'prop-types';
 
 import WeddingImg from '@assets/images/wedding-logo.png';
 import CountContainer from './CountContainer';
 import ScrollToDown from './ScrollToDown';
 import {styBackground, styButtonWrapper, styHero, styWrapper} from './styles';
-import SheetDB from 'sheetdb-js'
 
 const DELAY_TIME = 1500;
 
-function WelcomeSection({location, guest, isInvitation, isAnonymousGuest, codeLink, onClickDetail}) {
+function WelcomeSection({guest, isAnonymousGuest, onClickDetail}) {
     const [loading, setLoading] = useState(false);
     const [alreadyDownloadData, setAlreadyDownloadData] = useState(false);
 
@@ -46,20 +45,6 @@ function WelcomeSection({location, guest, isInvitation, isAnonymousGuest, codeLi
 
     const submitData = () => {
         console.log("submitData");
-        SheetDB.read('https://sheetdb.io/api/v1/ptkmds3iusg55', {}).then(function (result) {
-            console.log(result);
-        }, function (error) {
-            console.log(error);
-        });
-
-        SheetDB.write('https://sheetdb.io/api/v1/ptkmds3iusg55', {
-            sheet: 'Invitation',
-            data: {code: '10', name: 'Test', member: 41, status: 'dsad'}
-        }).then(function (result) {
-            console.log(result);
-        }, function (error) {
-            console.log(error);
-        });
     };
 
     const renderGuestSection = () => {
@@ -93,7 +78,7 @@ function WelcomeSection({location, guest, isInvitation, isAnonymousGuest, codeLi
                                 <CountContainer/>
                             </div>
                             {renderGuestSection()}
-                            {isInvitation && (
+                            {guest && (
                                 <div className="row" css={styButtonWrapper}>
                                     <div className="col-md-3">
                                         <button onClick={submitData} className="btn btn-default btn-block">Tham gia
@@ -114,10 +99,7 @@ function WelcomeSection({location, guest, isInvitation, isAnonymousGuest, codeLi
 
 WelcomeSection.propTypes = {
     guest: object.isRequired,
-    isInvitation: bool.isRequired,
     isAnonymousGuest: bool.isRequired,
-    location: object.isRequired,
-    codeLink: string,
     onClickDetail: func.isRequired,
 };
 

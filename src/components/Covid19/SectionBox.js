@@ -1,5 +1,5 @@
 import React from 'react';
-import { styBoxWrapper } from './styles';
+import {styBoxWrapper} from './styles';
 
 function SectionBox({ icon, text }) {
   return (

@@ -1,4 +1,4 @@
-import { css } from '@emotion/core';
+import {css} from '@emotion/core';
 import Background from '@assets/images/slide-6.jpg';
 
 export const styWrapper = css`

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { styScrollWrapper } from './styles';
-import { bool, func } from 'prop-types';
+import {styScrollWrapper} from './styles';
+import {bool, func} from 'prop-types';
 
 function ClickToSeeDetail({ loading, onClick }) {
   return (

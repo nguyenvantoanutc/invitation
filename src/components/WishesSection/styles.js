@@ -1,4 +1,4 @@
-import { css, keyframes } from '@emotion/core';
+import {css, keyframes} from '@emotion/core';
 
 const animation = keyframes`
   0% { right: -300px; opacity: 0;}

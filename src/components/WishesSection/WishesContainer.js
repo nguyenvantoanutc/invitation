@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 
 import WishesItem from './WishesItem';
-import { wishlist } from './wishlist-data';
-import { styButtonWrapper } from './styles';
+import {wishlist} from './wishlist-data';
+import {styButtonWrapper} from './styles';
 
 const INTERVAL_SLIDE = 35000;
 

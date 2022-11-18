@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import {useEffect, useState} from 'react';
 import offlineGuestData from '../../api/guest-data.json';
 
 function useGuestData() {
