@@ -36,13 +36,13 @@ function WeddingSection() {
                         <div className="col-md-10 col-md-offset-1">
                             <WeddingInfoBox
                                 title="Lễ vu Quy"
-                                time="10:30"
-                                date="Ngày 22/12/2022 (Dương lịch) <br/> Ngày 30/11/2022 (Âm lịch)"
+                                time="09:30"
+                                date="Ngày 23/12/2022 (Dương lịch) <br/> Ngày 01/12/2022 (Âm lịch)"
                                 description="TẠI NHÀ GÁI <br/> Thiệu Công, Thiệu Hóa, Thanh Hóa"
                             />
                             <WeddingInfoBox
                                 title="Lễ thành hôn"
-                                time="10:30"
+                                time="09:30"
                                 date="Ngày 24/12/2022 (Dương lịch) <br/> Ngày 02/12/2022 (Âm lịch)"
                                 description="TẠI NHÀ TRAI <br/> Thiệu Nguyên, Thiệu Hóa, Thanh Hóa"
                             />

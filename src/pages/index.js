@@ -37,7 +37,7 @@ function Home({location}) {
                 }
             })
         setAnonymousGuest(!guest)
-    }, [code, guest])
+    }, [code])
 
     const handleClickDetail = () => {
         setShowDetailContent(true);
@@ -52,10 +52,10 @@ function Home({location}) {
                 <WeddingSection/>
                 {/*{isInvitation && <CovidSection/>}*/}
                 {guest && <LocationSection/>}
+                {guest && <ConfirmationSection guest={guest}/>}
                 <StorySection/>
                 <PhotoSection/>
                 <WishesSection/>
-                <ConfirmationSection guest={guest}/>
                 <FooterSection guest={guest}/>
             </Fragment>
         );

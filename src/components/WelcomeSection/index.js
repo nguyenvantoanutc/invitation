@@ -4,7 +4,7 @@ import {bool, func, object} from 'prop-types';
 import WeddingImg from '@assets/images/wedding-logo.png';
 import CountContainer from './CountContainer';
 import ScrollToDown from './ScrollToDown';
-import {styBackground, styButtonWrapper, styHero, styWrapper} from './styles';
+import {styBackground, styHero, styWrapper} from './styles';
 
 const DELAY_TIME = 1500;
 
@@ -43,10 +43,6 @@ function WelcomeSection({guest, isAnonymousGuest, onClickDetail}) {
         }
     };
 
-    const submitData = () => {
-        console.log("submitData");
-    };
-
     const renderGuestSection = () => {
         if (isAnonymousGuest) return <h2 className="to-dearest-name">Dear Friends,</h2>;
 
@@ -78,14 +74,6 @@ function WelcomeSection({guest, isAnonymousGuest, onClickDetail}) {
                                 <CountContainer/>
                             </div>
                             {renderGuestSection()}
-                            {guest && (
-                                <div className="row" css={styButtonWrapper}>
-                                    <div className="col-md-3">
-                                        <button onClick={submitData} className="btn btn-default btn-block">Tham gia
-                                        </button>
-                                    </div>
-                                </div>
-                            )}
                         </div>
                     </div>
                     <div className="row">

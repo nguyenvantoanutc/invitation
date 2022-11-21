@@ -5,6 +5,7 @@ import Bride from '@assets/images/p-dinda-2.jpg';
 import Groom from '@assets/images/p-indra.jpg';
 import QRBride from '@assets/images/qr-toan.jpg';
 import QRGroom from '@assets/images/qr-toan.jpg';
+import CallNow from '@assets/icons/icons8-love-message-64.png';
 
 import {styWrapper} from './styles';
 
@@ -24,7 +25,7 @@ function HelloSection({guest}) {
                                     <h2 className="main-font">Wedding</h2>
                                     <h3 className="sub-title main-font hs">Mr.Toan &amp; Mrs.Phuong</h3>
                                     <p className="info uppercase">
-                                        Hôn lễ được tổ chức vào hồi 10h30
+                                        Hôn lễ được tổ chức vào hồi 09h30
                                     </p>
                                     <h3 className="sub-title hs">{finalSubtitle}</h3>
                                     <p className="info">
@@ -50,7 +51,7 @@ function HelloSection({guest}) {
                                         thân mật chung vui cùng gia đình chúng tôi
                                     </p>
                                     <p className="info">
-                                        Vào lúc <span>11h</span> ngày <span>23/12/2022 <br/> (Chủ nhật)</span>
+                                        Vào lúc <span>{guest.time}</span> ngày <span>{guest.date}</span>
                                     </p>
                                     <p className="info uppercase">
                                         Tại nhà trai
@@ -74,7 +75,10 @@ function HelloSection({guest}) {
                                 <h3 className="main-font">Nguyen Van Toan</h3>
                                 <p className="parent-name">
                                     <a href="tel:+84393767196">
-                                        Gọi điện cho chú rể
+                                        <img src={CallNow} style={{
+                                            width: '40px',
+                                            height: '50px'
+                                        }} alt="Call me"/>
                                     </a>
                                 </p>
                                 <p className="parent-name parent-name__top">
@@ -101,7 +105,10 @@ function HelloSection({guest}) {
                                 <h3 className="main-font">Hoang Thi Phuong</h3>
                                 <p className="parent-name">
                                     <a href="tel:+84358833104">
-                                        Gọi điện cho cô dâu
+                                        <img src={CallNow} style={{
+                                            width: '40px',
+                                            height: '50px'
+                                        }} alt="Call me"/>
                                     </a>
                                 </p>
                                 <p className="parent-name parent-name__top">
