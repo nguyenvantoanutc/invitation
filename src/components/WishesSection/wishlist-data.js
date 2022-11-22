@@ -4,6 +4,7 @@ import imgDan from './assets/w-linh-dan.jpg';
 import imgQuyen from './assets/w-pham-quyen.jpg';
 import imgThanhHa from './assets/w-thanh-ha.jpg';
 import imgKimEn from './assets/w-kim-en.jpg';
+import imgBichQuy from './assets/w-bich-quy.jpg';
 
 export const wishlist = [
     {
@@ -36,6 +37,13 @@ export const wishlist = [
         fbLink: 'https://www.facebook.com/kim.en.33',
         description: `Chúc mừng hạnh phúc hai em! Chúc hai em có một đám cưới trọn vẹn niềm vui, có một cuộc sống như ý. “Hôn nhân không phải là nơi thuyền tình cập bến mà là nơi hai người yêu nhau quyết định cùng giăng buồm vượt sóng ra khơi”. Chúc hai em căng buồm ra khơi thuận buồm xuôi gió.`,
         image: imgKimEn,
+    },
+    {
+        name: 'Quy Nguyễn',
+        infoName: 'Bạn Mrs. Phương',
+        fbLink: 'https://www.facebook.com/nguyenthibichquy.96',
+        description: `Chúc mừng hạnh phúc hai bạn và gia đình! Mình cảm thấy thật may mắn khi chúng ta là bạn của nhau và hôm nay mình lại có cơ hội được đứng ở đây để chúc phúc cho cuộc hôn nhân của bạn! <br/>Thật ra mình cũng  không biết chúc gì hơn, chỉ chúc hai bạn trong cuộc sống lúc nào cũng thuận vợ, thuận chồng. Chúc hai bạn luôn hạnh phúc, đầu bạc răng long, con cái đề huề! Happy wedding!<br/>Phải thật hạnh phúc nhé bạn thân!`,
+        image: imgBichQuy,
     },
     {
         name: 'Linh Đan',
