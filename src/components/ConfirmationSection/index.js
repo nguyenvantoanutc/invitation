@@ -10,6 +10,7 @@ function ConfirmationSection({guest}) {
     const [showTelegram, setShowTelegram] = useState(JSON.parse(localStorage.getItem(guest.code)))
 
     const submitData = () => {
+        let name = document.getElementById('name');
         let member = document.getElementById('member');
         let transport = document.getElementById('transport');
         let phone = document.getElementById('phone');
@@ -19,10 +20,13 @@ function ConfirmationSection({guest}) {
         transport = transport.value ? transport.value : 0
         phone = phone.value;
         wish = wish.value;
+        name = name.value;
+
+
         axios.get(SHEET_DATA_CONFIRM, {
             params: {
                 code: guest.code,
-                name: guest.name,
+                name: guest.code !== 'Anonymous' ? guest.name : name,
                 member: member,
                 transport: transport,
                 phone: phone,
@@ -52,6 +56,11 @@ function ConfirmationSection({guest}) {
                             Để gia đình đón tiếp được chu đáo, đầy đủ nhất. Vui lòng điền
                             đầy đủ các thông tin dưới đây
                         </p>
+                        <div className="form-group">
+                            <label className="fh5co-nav-white">Tên khách mời</label>
+                            <input type="text" className="form-control" id="name"
+                                   placeholder="Name"/>
+                        </div>
                         <div className="form-group">
                             <label className="fh5co-nav-white">Số khách mới</label>
                             <input type="number" className="form-control" id="member"
