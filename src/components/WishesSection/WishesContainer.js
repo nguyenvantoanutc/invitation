@@ -62,8 +62,8 @@ function WishesContainer() {
     <div className="wrap-testimony">
       {renderWishlist()}
       <div css={styButtonWrapper}>
-        <button className="btn btn-sm button-nav" onClick={() => handleSetActive(false)}>{`< Sebelumnya`}</button>
-        <button className="btn btn-sm button-nav" onClick={() => handleSetActive(true)}>{`Selanjutnya >`}</button>
+        <button className="btn btn-sm button-nav" onClick={() => handleSetActive(false)}>{`<<`}</button>
+        <button className="btn btn-sm button-nav" onClick={() => handleSetActive(true)}>{`>>`}</button>
       </div>
     </div>
   );
