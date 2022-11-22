@@ -25,7 +25,7 @@ function HelloSection({guest}) {
                                     <h2 className="main-font">Wedding</h2>
                                     <h3 className="sub-title main-font hs">Mr.Toan &amp; Mrs.Phuong</h3>
                                     <p className="info uppercase">
-                                        Hôn lễ được tổ chức vào hồi 09h30
+                                        Hôn lễ được tổ chức vào hồi 08h30
                                     </p>
                                     <h3 className="sub-title hs">{finalSubtitle}</h3>
                                     <p className="info">
