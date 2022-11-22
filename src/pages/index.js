@@ -51,7 +51,7 @@ function Home({location}) {
                 <HelloSection guest={guest}/>
                 <WeddingSection/>
                 {/*{isInvitation && <CovidSection/>}*/}
-                {guest && <LocationSection/>}
+                <LocationSection/>
                 {guest && <ConfirmationSection guest={guest}/>}
                 <StorySection/>
                 <PhotoSection/>

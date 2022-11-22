@@ -2,20 +2,22 @@ import React, {useState} from 'react';
 import {string} from 'prop-types';
 
 import {styFlex, styWrapper} from './styles';
-import {styButtonWrapper} from "../WelcomeSection/styles";
 import axios from "axios";
 import {SHEET_DATA_CONFIRM} from "../../constants";
+import {styButtonWrapper} from "../WelcomeSection/styles";
 
 function ConfirmationSection({guest}) {
-    const [showTelegram, setShowTelegram] = useState(false)
+    const [showTelegram, setShowTelegram] = useState(JSON.parse(localStorage.getItem(guest.code)))
 
     const submitData = () => {
         let member = document.getElementById('member');
         let transport = document.getElementById('transport');
+        let phone = document.getElementById('phone');
         let wish = document.getElementById('wish');
 
         member = member.value ? member.value : 1
         transport = transport.value ? transport.value : 0
+        phone = phone.value;
         wish = wish.value;
         axios.get(SHEET_DATA_CONFIRM, {
             params: {
@@ -23,10 +25,12 @@ function ConfirmationSection({guest}) {
                 name: guest.name,
                 member: member,
                 transport: transport,
+                phone: phone,
                 wish: wish,
             }
         })
             .then(function (response) {
+                localStorage.setItem(guest.code, "true")
                 setShowTelegram(true)
             })
             .catch(function (error) {
@@ -41,7 +45,7 @@ function ConfirmationSection({guest}) {
         <div id="fh5co-started" className="fh5co-bg" css={styWrapper}>
             <div className="overlay"/>
             <div className="container">
-                <div className="row">
+                {!showTelegram && (<div className="row">
                     <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
                         <h2 className="main-font">Attend</h2>
                         <p>
@@ -62,6 +66,11 @@ function ConfirmationSection({guest}) {
                             </select>
                         </div>
                         <div className="form-group">
+                            <label className="fh5co-nav-white">Số điện thoại liên hệ</label>
+                            <input type="text" className="form-control" id="phone"
+                                   placeholder="Phone"/>
+                        </div>
+                        <div className="form-group">
                             <label>Lời chúc mừng đến cô dâu/chú rể</label>
                             <textarea type="text" className="form-control" id="wish"
                                       placeholder="Wish"/>
@@ -73,7 +82,7 @@ function ConfirmationSection({guest}) {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>)}
                 {showTelegram && (
                     <div className="row" css={styFlex}>
                         <div className="col-md-8 text-center fh5co-heading">

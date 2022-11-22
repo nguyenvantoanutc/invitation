@@ -51,7 +51,8 @@ function HelloSection({guest}) {
                                         thân mật chung vui cùng gia đình chúng tôi
                                     </p>
                                     <p className="info">
-                                        Vào lúc <span>{guest.time}</span> ngày <span>{guest.date}</span>
+                                        Vào
+                                        lúc <span>{guest ? guest.time : "11h30"}</span> ngày <span>{guest ? guest.date : "24/12/2022"}</span>
                                     </p>
                                     <p className="info uppercase">
                                         Tại nhà trai
