@@ -12,6 +12,7 @@ import imgHongHa from './assets/w-hong-ha.jpg';
 import imgVinhTB from './assets/w-vinh-tb.jpg';
 import imgLeChi from './assets/w-le-chi.jpg';
 import imgThanhHuyen from './assets/w-thanh-huyen.jpg';
+import imgHienMit from './assets/w-hien-mit.jpg';
 
 export const wishlist = [
     {
@@ -126,5 +127,14 @@ export const wishlist = [
                     Nhưng nhớ chớ dại lạm quyền<br/>
                     Phải là "trụ cột" yêu thương "nóc nhà" !`,
         image: imgThanhHuyen,
+    },
+    {
+        name: 'Hiền Mít',
+        infoName: 'Viet Solution',
+        fbLink: 'https://www.facebook.com/hienmitttt',
+        description: `Quen nhau từ thuở FA, 
+                        Tới nay bạn đã có Phương - nóc nhà <br/><br/>
+                        Chúc mừng Toàn đã lừa được cô vợ xinh đẹp giỏi giang nha! Chúc đôi bạn trẻ hạnh phúc mãi mãi, sớm sinh bé đầu lòng để cô dắt cháu đi nhậu nha! `,
+        image: imgHienMit,
     },
 ];
