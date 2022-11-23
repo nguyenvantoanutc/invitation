@@ -1,5 +1,5 @@
 import React, {Fragment, useState} from 'react';
-import {bool, func, object} from 'prop-types';
+import {func, object} from 'prop-types';
 
 import WeddingImg from '@assets/images/wedding-logo.png';
 import CountContainer from './CountContainer';
