@@ -42,29 +42,32 @@ function HelloSection({guest}) {
                                     </p>
                                 </div>
                             </div>
-                            <div hidden={!guest} className="col-md-6 col-sm-6 pd-invitation">
-                                <div className="invitation text-center">
-                                    <h2 className="main-font">Invitation</h2>
-                                    <h3 className="sub-title main-font hs">Mr.Toan &amp; Mrs.Phuong</h3>
-                                    <p className="info">
-                                        Trân trọng kính mời <span> {guest ? guest.name : "Bạn"}</span> đến dự bữa tiệc
-                                        thân mật chung vui cùng gia đình chúng tôi
-                                    </p>
-                                    <p className="info">
-                                        Vào
-                                        lúc <span>{guest ? guest.time : "11h30"}</span> ngày <span>{guest ? guest.date : "24/12/2022"}</span>
-                                    </p>
-                                    <p className="info uppercase">
-                                        {guest.groom === "0" ? "Tại nhà trai" : "Tại nhà gái"}
-                                    </p>
-                                    <p className="info">
-                                        Thiệu Nguyên, Thiệu Hóa, Thanh Hóa
-                                    </p>
-                                    <p className="info">
-                                        Rất hân hạnh được đón tiếp !
-                                    </p>
+                            {guest && (
+                                <div className="col-md-6 col-sm-6 pd-invitation">
+                                    <div className="invitation text-center">
+                                        <h2 className="main-font">Invitation</h2>
+                                        <h3 className="sub-title main-font hs">Mr.Toan &amp; Mrs.Phuong</h3>
+                                        <p className="info">
+                                            Trân trọng kính mời <span> {guest ? guest.name : "Bạn"}</span> đến dự bữa
+                                            tiệc
+                                            thân mật chung vui cùng gia đình chúng tôi
+                                        </p>
+                                        <p className="info">
+                                            Vào
+                                            lúc <span>{guest ? guest.time : "11h30"}</span> ngày <span>{guest ? guest.date : "24/12/2022"}</span>
+                                        </p>
+                                        <p className="info uppercase">
+                                            {guest.groom === "0" ? "Tại nhà trai" : "Tại nhà gái"}
+                                        </p>
+                                        <p className="info">
+                                            Thiệu Nguyên, Thiệu Hóa, Thanh Hóa
+                                        </p>
+                                        <p className="info">
+                                            Rất hân hạnh được đón tiếp !
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
+                            )}
                         </div>
                     </div>
                     <div className="couple-wrap">

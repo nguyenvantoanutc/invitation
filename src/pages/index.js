@@ -21,22 +21,21 @@ import axios from 'axios'
 
 function Home({location}) {
     const code = getQueryValue(location, 'code') || '';
-    const [guest, setGuest] = useState({})
+    const [guest, setGuest] = useState()
     // const {data, loading} = useGuestData();
-    const [isAnonymousGuest, setAnonymousGuest] = useState(guest);
 
     const [showDetailContent, setShowDetailContent] = useState(false);
 
     useEffect(() => {
         axios.get(SHEET_DATA_INVITATION)
             .then(response => {
+                console.log(response)
                 if (response.data) {
                     let index = response.data.data.findIndex(x => x.code === code);
-                    if (index >= 0)
+                    if (index >= 0) {
                         setGuest(response.data.data[index])
                 }
-            })
-        setAnonymousGuest(!guest)
+            }})
     }, [code])
 
     const handleClickDetail = () => {
@@ -65,7 +64,6 @@ function Home({location}) {
         <MainLayout>
             <WelcomeSection
                 guest={guest}
-                isAnonymGuest={isAnonymousGuest}
                 onClickDetail={handleClickDetail}
             />
             {renderDetailContent()}

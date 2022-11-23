@@ -8,7 +8,7 @@ import {styBackground, styHero, styWrapper} from './styles';
 
 const DELAY_TIME = 1500;
 
-function WelcomeSection({guest, isAnonymousGuest, onClickDetail}) {
+function WelcomeSection({guest, onClickDetail}) {
     const [loading, setLoading] = useState(false);
     const [alreadyDownloadData, setAlreadyDownloadData] = useState(false);
 
@@ -44,8 +44,6 @@ function WelcomeSection({guest, isAnonymousGuest, onClickDetail}) {
     };
 
     const renderGuestSection = () => {
-        if (isAnonymousGuest) return <h2 className="to-dearest-name">Dear Friends,</h2>;
-
         return (
             <Fragment>
                 <h3 className="to-dearest">Gửi tới</h3>
@@ -70,7 +68,7 @@ function WelcomeSection({guest, isAnonymousGuest, onClickDetail}) {
                             <img src={WeddingImg} alt="wedding-dinda-indra"/>
                             <h4 className="sub-title">The Wedding of</h4>
                             <h1 className="title">Mr.Toan &amp; Mrs.Phuong</h1>
-                            <div className={isAnonymousGuest ? 'margin__bottom' : ''}>
+                            <div className={guest ? 'margin__bottom' : ''}>
                                 <CountContainer/>
                             </div>
                             {renderGuestSection()}
@@ -87,7 +85,6 @@ function WelcomeSection({guest, isAnonymousGuest, onClickDetail}) {
 
 WelcomeSection.propTypes = {
     guest: object.isRequired,
-    isAnonymousGuest: bool.isRequired,
     onClickDetail: func.isRequired,
 };
 

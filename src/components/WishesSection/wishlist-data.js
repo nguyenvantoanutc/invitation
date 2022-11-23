@@ -10,6 +10,7 @@ import imgGirl from './assets/girl.png';
 import imgThuHa from './assets/w-ha.jpg';
 import imgHongHa from './assets/w-hong-ha.jpg';
 import imgVinhTB from './assets/w-vinh-tb.jpg';
+import imgLeChi from './assets/w-le-chi.jpg';
 
 export const wishlist = [
     {
@@ -98,6 +99,13 @@ export const wishlist = [
         fbLink: 'https://www.facebook.com/nguyentrongvinh.tb.96',
         description: `Chúc mừng hạnh phúc lứa đôi.. Tớ mong 2 bạn sẽ có cuộc hôn nhân viên mãn, đong đầy tình cảm, xây dựng một tổ ấm đầy ắp tiếng cười trẻ thơ và chan hòa yêu thương .. Cung hỉ, cung hỉ...`,
         image: imgVinhTB,
+    },
+    {
+        name: 'Phương Chi Lê',
+        infoName: 'Chị Mrs. Phương',
+        fbLink: 'https://www.facebook.com/phuongchi.le.94',
+        description: `Congratulations on your wedding, sister. You now has someone with you to go to the end of your life. Wish you always happy and happy with your wonderful husband`,
+        image: imgLeChi,
     },
     {
         name: 'Phạm Quyền',
