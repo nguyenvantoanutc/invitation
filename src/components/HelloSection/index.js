@@ -1,9 +1,9 @@
 import React, {Fragment} from 'react';
 import {object} from 'prop-types';
 
-import Bride from '@assets/images/p-dinda-2.jpg';
-import Groom from '@assets/images/p-indra.jpg';
-import QRBride from '@assets/images/qr-toan.jpg';
+import Bride from '@assets/images/bride_1.png';
+import Groom from '@assets/images/groom_1.png';
+import QRBride from '@assets/images/qr-phuong.jpg';
 import QRGroom from '@assets/images/qr-toan.jpg';
 import CallNow from '@assets/icons/icons8-love-message-64.png';
 
@@ -55,7 +55,7 @@ function HelloSection({guest}) {
                                         lúc <span>{guest ? guest.time : "11h30"}</span> ngày <span>{guest ? guest.date : "24/12/2022"}</span>
                                     </p>
                                     <p className="info uppercase">
-                                        Tại nhà trai
+                                        {guest.groom === "0" ? "Tại nhà trai" : "Tại nhà gái"}
                                     </p>
                                     <p className="info">
                                         Thiệu Nguyên, Thiệu Hóa, Thanh Hóa
@@ -89,7 +89,7 @@ function HelloSection({guest}) {
                                     <br/>
                                     Thiệu Nguyên, Thiệu Hóa, Thanh Hóa
                                 </p>
-                                <img src={QRBride} alt="groom" className="img-qr" loading="lazy"/>
+                                <img src={QRGroom} alt="groom" className="img-qr" loading="lazy"/>
                             </div>
                         </div>
                         <p className="heart text-center">
@@ -119,7 +119,7 @@ function HelloSection({guest}) {
                                     <br/>
                                     Thiệu Công, Thiệu Hóa, Thanh Hóa
                                 </p>
-                                <img src={QRGroom} alt="groom" className="img-qr" loading="lazy"/>
+                                <img src={QRBride} alt="bride" className="img-qr" loading="lazy"/>
                             </div>
                         </div>
                     </div>
@@ -138,7 +138,7 @@ function HelloSection({guest}) {
                                 </p>
                                 <p className="info">
                                     Vì vậy, với tất cả sự khiêm tốn, chúng tôi chân thành xin lỗi nếu chúng tôi không
-                                    thể mời anh/ chị / em tới dự ngày hạnh phúc của chúng tôi.
+                                    thể mời anh/chị/em tới dự ngày hạnh phúc của chúng tôi.
                                 </p>
                                 <p className="info">
                                     Trân trọng !

@@ -18,9 +18,9 @@ function ConfirmationSection({guest}) {
 
         member = member.value ? member.value : 1
         transport = transport.value ? transport.value : 0
-        phone = phone.value;
-        wish = wish.value;
-        name = name.value;
+        phone = phone ? phone.value : "";
+        wish = wish ? wish.value : "";
+        name = name ? name.value : "";
 
 
         axios.get(SHEET_DATA_CONFIRM, {
@@ -56,11 +56,12 @@ function ConfirmationSection({guest}) {
                             Để gia đình đón tiếp được chu đáo, đầy đủ nhất. Vui lòng điền
                             đầy đủ các thông tin dưới đây
                         </p>
-                        <div className="form-group">
-                            <label className="fh5co-nav-white">Tên khách mời</label>
-                            <input type="text" className="form-control" id="name"
-                                   placeholder="Name"/>
-                        </div>
+                        {guest.code === 'Anonymous' && (
+                            <div className="form-group">
+                                <label className="fh5co-nav-white">Tên khách mời</label>
+                                <input type="text" className="form-control" id="name"
+                                       placeholder="Name"/>
+                            </div>)}
                         <div className="form-group">
                             <label className="fh5co-nav-white">Số khách mới</label>
                             <input type="number" className="form-control" id="member"

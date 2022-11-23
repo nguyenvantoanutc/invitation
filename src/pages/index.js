@@ -31,9 +31,9 @@ function Home({location}) {
         axios.get(SHEET_DATA_INVITATION)
             .then(response => {
                 if (response.data) {
-                    let result = response.data.data.filter(x => x.code === code);
-                    if (result)
-                        setGuest(result[0])
+                    let index = response.data.data.findIndex(x => x.code === code);
+                    if (index >= 0)
+                        setGuest(response.data.data[index])
                 }
             })
         setAnonymousGuest(!guest)
