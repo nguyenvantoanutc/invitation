@@ -4,7 +4,7 @@ import {styWrapper} from '../HelloSection/styles';
 function FooterSection({guest}) {
     return (
         <Fragment>
-            {!guest && (
+            {guest && (
                 <div id="fh5co-couple" className="fh5co-section-gray" css={styWrapper}>
                     <div className="container">
                         <div className="row">
