@@ -11,6 +11,7 @@ import imgThuHa from './assets/w-ha.jpg';
 import imgHongHa from './assets/w-hong-ha.jpg';
 import imgVinhTB from './assets/w-vinh-tb.jpg';
 import imgLeChi from './assets/w-le-chi.jpg';
+import imgThanhHuyen from './assets/w-thanh-huyen.jpg';
 
 export const wishlist = [
     {
@@ -113,5 +114,17 @@ export const wishlist = [
         fbLink: 'https://www.facebook.com/phamquyen29',
         description: `Hôn nhân chính là khoảng thời gian đẹp nhất để cả hai tâm hồn có thể chia sẻ với nhau. Hai bạn hãy thắp sáng tình yêu bằng những ngọn nến yêu thương nhau mỗi ngày. Chúc mừng hạnh phúc đôi bạn trẻ!`,
         image: imgQuyen,
+    },
+    {
+        name: 'Phạm Thanh Huyền',
+        infoName: 'VNPT VAS',
+        fbLink: 'https://www.facebook.com/huyenphamthanh25',
+        description: `Sau bao tháng đợi năm chờ<br/>
+                    Ngày vui đã điểm, cả làng hân hoan<br/>
+                    Huyền em chúc cho tân lang:<br/>
+                    Nơi PHƯƠNG trời mới vẫn TOÀN uy phong<br/>
+                    Nhưng nhớ chớ dại lạm quyền<br/>
+                    Phải là "trụ cột" yêu thương "nóc nhà" !`,
+        image: imgThanhHuyen,
     },
 ];
