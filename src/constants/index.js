@@ -16,5 +16,5 @@ export const UTC_WEDDING_TIME = 'Ngày 24 tháng 12 năm 2022';
  * Link api sheetdb.io control google sheet
  */
 // export const SHEET_DATA_INVITATION = "https://script.google.com/macros/s/AKfycby0-iQ02onxAbe2CT0jReB_nOtZNgTQ5ymQJ7MmjxHY3ddAGysG2T9M-f1gaFy_vxIaUQ/exec";
-export const SHEET_DATA_INVITATION = "https://script.google.com/macros/s/AKfycbxYUFrC3B5lBUBBDZqPP-tX_SUlQ6VsrUxe6tsAxU7nqLwvMRn2cfP4XMb62mxsvjNxmA/exec";
+export const SHEET_DATA_INVITATION = "https://script.google.com/macros/s/AKfycbwG04JtsmzIYxYd4YklAfSdQS684NyVQnLk0uVRK-RS380jhjgfz_P5Mkv1LwbWWOjTGQ/exec";
 export const SHEET_DATA_CONFIRM = "https://script.google.com/macros/s/AKfycbx0bdwe61Oj6WC6lVnHPJ7OTv17wZRgDGR2hip6BJ357qY2if9hCkX9Lh1QVzBydIId-g/exec?";
