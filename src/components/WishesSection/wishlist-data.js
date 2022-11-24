@@ -13,6 +13,7 @@ import imgVinhTB from './assets/w-vinh-tb.jpg';
 import imgLeChi from './assets/w-le-chi.jpg';
 import imgThanhHuyen from './assets/w-thanh-huyen.jpg';
 import imgHienMit from './assets/w-hien-mit.jpg';
+import imgLan from './assets/w-lan.jpg';
 
 export const wishlist = [
     {
@@ -132,9 +133,17 @@ export const wishlist = [
         name: 'Hiền Mít',
         infoName: 'Viet Solution',
         fbLink: 'https://www.facebook.com/hienmitttt',
-        description: `Quen nhau từ thuở FA, 
+        description: `Quen nhau từ thuở FA<br/>
                         Tới nay bạn đã có Phương - nóc nhà <br/><br/>
                         Chúc mừng Toàn đã lừa được cô vợ xinh đẹp giỏi giang nha! Chúc đôi bạn trẻ hạnh phúc mãi mãi, sớm sinh bé đầu lòng để cô dắt cháu đi nhậu nha! `,
         image: imgHienMit,
+    },
+    {
+        name: 'Nguyễn Lan',
+        infoName: 'Bạn Mrs. Phương',
+        fbLink: 'https://www.facebook.com/profile.php?id=100006929224343',
+        description: `Thật vui vì cuối cùng ngày này cũng tới với bạn. Cuối cùng thì bạn đã dừng chân tại bến đỗ, mảnh ghép hoàn hảo của cuộc đời mình. Tớ  không biết nói gì hơn, thành tâm chúc hai bạn hạnh phúc và hạnh phúc, sống một cuộc sống vui vẻ cùng nhau mãi mãi. 
+                    <br/>Happy wedding !`,
+        image: imgLan,
     },
 ];
