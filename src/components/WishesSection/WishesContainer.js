@@ -4,7 +4,7 @@ import WishesItem from './WishesItem';
 import {wishlist} from './wishlist-data';
 import {styButtonWrapper} from './styles';
 
-const INTERVAL_SLIDE = 35000;
+const INTERVAL_SLIDE = 25000;
 
 function WishesContainer() {
   const [active, setActive] = useState(0);
