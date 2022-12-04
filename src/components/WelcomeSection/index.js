@@ -6,7 +6,7 @@ import CountContainer from './CountContainer';
 import ScrollToDown from './ScrollToDown';
 import {styBackground, styHero, styWrapper} from './styles';
 
-const DELAY_TIME = 1500;
+const DELAY_TIME = 3000;
 
 function WelcomeSection({guest, onClickDetail}) {
     const [loading, setLoading] = useState(false);
