@@ -1,33 +1,41 @@
-import Gallery1 from '@assets/images/gallery-1.jpg';
-import GalleryT1 from '@assets/images/gallery-t-1.jpg';
-import Gallery4 from '@assets/images/gallery-4.jpg';
-import GalleryT4 from '@assets/images/gallery-t-4.jpg';
-import Gallery5 from '@assets/images/gallery-5.jpg';
-import GalleryT5 from '@assets/images/gallery-t-5.jpg';
-import Image5 from '@assets/images/slide-5.jpg';
-import Image5thumb from '@assets/images/slide-5-thumb.jpg';
-import Image6 from '@assets/images/slide-6.jpg';
-import Image6thumb from '@assets/images/slide-6-thumb.jpg';
-import Gallery6 from '@assets/images/gallery-6.jpg';
-import GalleryT6 from '@assets/images/gallery-t-6.jpg';
-import Gallery7 from '@assets/images/gallery-7.jpg';
-import GalleryT7 from '@assets/images/gallery-t-7.jpg';
-import Gallery8 from '@assets/images/gallery-8.jpg';
-import GalleryT8 from '@assets/images/gallery-t-8.jpg';
-import Gallery9 from '@assets/images/gallery-9.jpg';
-import GalleryT9 from '@assets/images/gallery-t-9.jpg';
-import Gallery10 from '@assets/images/gallery-10.jpg';
-import GalleryT10 from '@assets/images/gallery-t-10.jpg';
-import Gallery11 from '@assets/images/gallery-11.jpg';
-import GalleryT11 from '@assets/images/gallery-t-11.jpg';
-import Gallery12 from '@assets/images/gallery-12.jpg';
-import GalleryT12 from '@assets/images/gallery-t-12.jpg';
-import Gallery13 from '@assets/images/gallery-13.jpg';
-import GalleryT13 from '@assets/images/gallery-t-13.jpg';
-import Gallery14 from '@assets/images/gallery-14.jpg';
-import GalleryT14 from '@assets/images/gallery-t-14.jpg';
-import Gallery15 from '@assets/images/gallery-15.jpg';
-import GalleryT15 from '@assets/images/gallery-t-15.jpg';
+import Gallery1 from '@assets/images/img-1.jpg';
+import GalleryT1 from '@assets/images/img-1.jpg';
+import Gallery4 from '@assets/images/img-5.jpg';
+import GalleryT4 from '@assets/images/img-5.jpg';
+import Gallery5 from '@assets/images/img-3.jpg';
+import GalleryT5 from '@assets/images/img-3.jpg';
+import Image5 from '@assets/images/img-2.jpg';
+import Image5thumb from '@assets/images/img-2.jpg';
+import Image6 from '@assets/images/img-6.jpg';
+import Image6thumb from '@assets/images/img-6.jpg';
+import Gallery6 from '@assets/images/img-8.jpg';
+import GalleryT6 from '@assets/images/img-8.jpg';
+import Gallery7 from '@assets/images/img-15.jpg';
+import GalleryT7 from '@assets/images/img-15.jpg';
+import Gallery8 from '@assets/images/img-16.jpg';
+import GalleryT8 from '@assets/images/img-16.jpg';
+import Gallery9 from '@assets/images/img-4.jpg';
+import GalleryT9 from '@assets/images/img-4.jpg';
+import Gallery10 from '@assets/images/img-7.jpg';
+import GalleryT10 from '@assets/images/img-7.jpg';
+import Gallery11 from '@assets/images/img-9.jpg';
+import GalleryT11 from '@assets/images/img-9.jpg';
+import Gallery12 from '@assets/images/img-10.jpg';
+import GalleryT12 from '@assets/images/img-10.jpg';
+import Gallery13 from '@assets/images/img-11.jpg';
+import GalleryT13 from '@assets/images/img-11.jpg';
+import Gallery14 from '@assets/images/img-12.jpg';
+import GalleryT14 from '@assets/images/img-12.jpg';
+import Gallery15 from '@assets/images/img-13.jpg';
+import GalleryT15 from '@assets/images/img-13.jpg';
+import Gallery16 from '@assets/images/img-14.jpg';
+import GalleryT16 from '@assets/images/img-14.jpg';
+import Gallery17 from '@assets/images/img-17.jpg';
+import GalleryT17 from '@assets/images/img-17.jpg';
+import Gallery18 from '@assets/images/img-18.jpg';
+import GalleryT18 from '@assets/images/img-18.jpg';
+import Gallery19 from '@assets/images/img-19.jpg';
+import GalleryT19 from '@assets/images/img-19.jpg';
 
 export const photos = [
   {
@@ -90,4 +98,20 @@ export const photos = [
     original: Gallery15,
     thumbnail: GalleryT15,
   },
+  {
+    original: Gallery16,
+    thumbnail: GalleryT16,
+  },
+  {
+    original: Gallery17,
+    thumbnail: GalleryT17,
+  },
+  {
+    original: Gallery18,
+    thumbnail: GalleryT18,
+  },
+  {
+    original: Gallery19,
+    thumbnail: GalleryT19,
+  }
 ];
