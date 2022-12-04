@@ -1131,7 +1131,7 @@ form label {
 }
 
 #fh5co-couple {
-    min-height: 50vh;
+    min-height: 30vh;
 }
 
 @media screen and (max-width: 768px) {
