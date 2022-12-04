@@ -56,12 +56,28 @@ function HelloSection({guest}) {
                                             Vào
                                             lúc <span>{guest ? guest.time : "11h30"}</span> ngày <span>{guest ? guest.date : "24/12/2022"}</span>
                                         </p>
-                                        <p className="info uppercase">
-                                            {guest.groom === "0" ? "Tại nhà trai" : "Tại nhà gái"}
-                                        </p>
-                                        <p className="info">
-                                            Thiệu Nguyên, Thiệu Hóa, Thanh Hóa
-                                        </p>
+                                        {guest.groom === "0" && (
+                                            <>
+                                                <p className="info uppercase">
+                                                    Tại nhà trai
+                                                </p>
+                                                <p className="info">
+                                                    Thiệu Nguyên, Thiệu Hóa, Thanh Hóa
+                                                </p>
+                                            </>
+                                        )}
+                                        {guest.groom !== "0" && (
+                                            <>
+                                                <p className="info uppercase">
+                                                    Tại nhà gái
+                                                </p>
+                                                <p className="info">
+                                                    Thiệu Công, Thiệu Hóa, Thanh Hóa
+                                                </p>
+                                            </>
+                                        )}
+
+
                                         <p className="info">
                                             Rất hân hạnh được đón tiếp !
                                         </p>

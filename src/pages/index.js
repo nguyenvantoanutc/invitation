@@ -29,7 +29,6 @@ function Home({location}) {
     useEffect(() => {
         axios.get(SHEET_DATA_INVITATION)
             .then(response => {
-                console.log(response)
                 if (response.data) {
                     let index = response.data.data.findIndex(x => x.code === code);
                     if (index >= 0) {

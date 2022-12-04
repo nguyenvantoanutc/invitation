@@ -47,7 +47,7 @@ function WelcomeSection({guest, onClickDetail}) {
         return (
             <Fragment>
                 <h3 className="to-dearest">Gửi tới</h3>
-                <h2 className="to-dearest-name">{guest ? guest.name : "Bạn"}</h2>
+                <h2 className="to-dearest-name">{guest ? guest.name : ""}</h2>
             </Fragment>
         );
     };
@@ -68,6 +68,7 @@ function WelcomeSection({guest, onClickDetail}) {
                             <img src={WeddingImg} alt="wedding-dinda-indra"/>
                             <h4 className="sub-title">The Wedding of</h4>
                             <h1 className="title">Mr.Toan &amp; Mrs.Phuong</h1>
+                            <h1 className="title" style={{fontSize: '35px'}}>24-12-2022</h1>
                             <div className={guest ? 'margin__bottom' : ''}>
                                 <CountContainer/>
                             </div>
