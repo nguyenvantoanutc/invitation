@@ -26,7 +26,7 @@ function ConfirmationSection({guest}) {
         axios.get(SHEET_DATA_CONFIRM, {
             params: {
                 code: guest.code,
-                name: guest.code !== 'Anonymous' ? guest.name : name,
+                name: (guest.code !== 'Anonymous' && guest.code !== 'Family') ? guest.name : name,
                 member: member,
                 transport: transport,
                 phone: phone,
@@ -56,7 +56,7 @@ function ConfirmationSection({guest}) {
                             Để gia đình đón tiếp được chu đáo, đầy đủ nhất. Vui lòng điền
                             đầy đủ các thông tin dưới đây
                         </p>
-                        {guest.code === 'Anonymous' && (
+                        {(guest.code === 'Anonymous' || guest.code === 'Family') && (
                             <div className="form-group">
                                 <label className="fh5co-nav-white">Tên khách mời</label>
                                 <input type="text" className="form-control" id="name"
@@ -103,7 +103,7 @@ function ConfirmationSection({guest}) {
                                 Sự hiện diện của bạn là điều tuyệt vời nhất đối với chúng tôi.
 
                             </p>
-                            <a href="https://zalo.me/g/uasexa203">
+                            <a href="https://t.me/+UtxXED6sqCE1NDFl">
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                      width="56" height="56"
                                      viewBox="0 0 48 48">
