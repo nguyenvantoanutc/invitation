@@ -35,8 +35,8 @@ function WeddingSection() {
                     <div className="row">
                         <div className="col-md-10 col-md-offset-1">
                             <WeddingInfoBox
-                                title="Lễ vu Quy"
-                                time="08:30"
+                                title="Lễ Nạp tài"
+                                time="07:30"
                                 date="Ngày 23/12/2022 (Dương lịch) <br/> Ngày 01/12/2022 (Âm lịch)"
                                 description="TẠI NHÀ GÁI <br/> Thiệu Công, Thiệu Hóa, Thanh Hóa"
                             />
