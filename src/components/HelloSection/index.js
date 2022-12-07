@@ -42,7 +42,7 @@ function HelloSection({guest}) {
                                     </p>
                                 </div>
                             </div>
-                            {guest && (
+                            {guest && guest.code !== 'Family' && (
                                 <div className="col-md-6 col-sm-6 pd-invitation">
                                     <div className="invitation text-center">
                                         <h2 className="main-font">Invitation</h2>
@@ -54,7 +54,7 @@ function HelloSection({guest}) {
                                         </p>
                                         <p className="info">
                                             Vào
-                                            lúc <span>{guest ? guest.time : "11h30"}</span> ngày <span>{guest ? guest.date : "24/12/2022"}</span>
+                                            lúc <span>{guest ? guest.time : "11h00"}</span> ngày <span>{guest ? guest.date : "24/12/2022"}</span>
                                         </p>
                                         {guest.groom === "0" && (
                                             <>
