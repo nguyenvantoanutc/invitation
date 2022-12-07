@@ -20,7 +20,7 @@ function HelloSection({guest}) {
                     <div className="row">
                         <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
                             <div
-                                className={guest ? "col-md-6 col-sm-6 pd-invitation" : "col-md-12 col-sm-12"}>
+                                className={(guest && guest.code !== 'Family') ? "col-md-6 col-sm-6 pd-invitation" : "col-md-12 col-sm-12"}>
                                 <div className="invitation text-center">
                                     <h2 className="main-font">Wedding</h2>
                                     <h3 className="sub-title main-font hs">Mr.Toan &amp; Mrs.Phuong</h3>
