@@ -11,7 +11,7 @@ export const stories = [
         title: 'Ngày định mệnh',
         date: '08/08/2020',
         description:
-            'Người ta thường nói mùa thu là mùa thích hợp để bắt đầu 1 mối tình .Thành thật mà nói mùa nào cũng thích hợp cả. Chỉ cần anh đủ cam đảm đưa tay và em cũng sẵn sàng nắm lại là có một câu chuyện tình yêu. Nhưng thật ra, nếu được bắt đầu một tình yêu vào cái thời tiết dịu dàng, mát mẻ của mùa thu miền bắc thì vấn hơn mà, phải không? May mắn thay là duyên se trời định sắp xếp để chúng tôi gặp nhau ở đám cưới của 1 cô bạn thân. Vào một chiều thu, nhẹ nhàng, dịu dàng đến lạ. Khi mà ai cũng đẹp, rạng rỡ nhất. Có thể là với bạn chỉ là một ngày tuyệt vời để đi khám phá thế giới, đi chơi cùng bạn bè, người thân, ... Nhưng với chùng tôi đây là ngày đặc biệt, ngày chúng tôi gặp được người đặc biệt của nhau',
+            'Người ta thường nói mùa thu là mùa thích hợp để bắt đầu 1 mối tình .Thành thật mà nói mùa nào cũng thích hợp cả. Chỉ cần anh đủ cam đảm đưa tay và em cũng sẵn sàng nắm lại là có một câu chuyện tình yêu. Nhưng thật ra, nếu được bắt đầu một tình yêu vào cái thời tiết dịu dàng, mát mẻ của mùa thu miền bắc thì vẫn hơn mà, phải không? May mắn thay là duyên se trời định sắp xếp để chúng tôi gặp nhau ở đám cưới của 1 cô bạn thân. Vào một chiều thu, nhẹ nhàng, dịu dàng đến lạ. Khi mà ai cũng đẹp, rạng rỡ nhất. Có thể là với bạn chỉ là một ngày tuyệt vời để đi khám phá thế giới, đi chơi cùng bạn bè, người thân, ... Nhưng với chùng tôi đây là ngày đặc biệt, ngày chúng tôi gặp được người đặc biệt của nhau',
         image: ImgFirstMeet,
     },
     {

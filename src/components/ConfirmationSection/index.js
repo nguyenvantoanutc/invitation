@@ -63,9 +63,9 @@ function ConfirmationSection({guest}) {
                                        placeholder="Name"/>
                             </div>)}
                         <div className="form-group">
-                            <label className="fh5co-nav-white">Số khách mới</label>
+                            <label className="fh5co-nav-white">Số thành viên tham dự</label>
                             <input type="number" className="form-control" id="member"
-                                   placeholder="Member"/>
+                                   placeholder="Member Number"/>
                         </div>
                         <div className="form-group">
                             <label>Hình thức di chuyển</label>
