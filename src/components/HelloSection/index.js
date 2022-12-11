@@ -35,7 +35,7 @@ function HelloSection({guest}) {
                                         Tại nhà trai
                                     </p>
                                     <p className="info">
-                                        Thiệu Nguyên, Thiệu Hóa, Thanh Hóa
+                                        Nguyên Thắng, Thiệu Nguyên, Thiệu Hóa, Thanh Hóa
                                     </p>
                                     <p className="info">
                                         Sự hiện diện của quý khách là niềm vinh hạnh cho gia đình chúng tôi
@@ -62,7 +62,7 @@ function HelloSection({guest}) {
                                                     Tại nhà trai
                                                 </p>
                                                 <p className="info">
-                                                    Thiệu Nguyên, Thiệu Hóa, Thanh Hóa
+                                                    Nguyên Thắng, Thiệu Nguyên, Thiệu Hóa, Thanh Hóa
                                                 </p>
                                             </>
                                         )}
@@ -72,7 +72,7 @@ function HelloSection({guest}) {
                                                     Tại nhà gái
                                                 </p>
                                                 <p className="info">
-                                                    Thiệu Công, Thiệu Hóa, Thanh Hóa
+                                                    Minh Thượng, Thiệu Công, Thiệu Hóa, Thanh Hóa
                                                 </p>
                                             </>
                                         )}
@@ -106,7 +106,7 @@ function HelloSection({guest}) {
                                     <br/>
                                     Mẹ: Nguyễn Thị Tâm
                                     <br/>
-                                    Thiệu Nguyên, Thiệu Hóa, Thanh Hóa
+                                    Nguyên Thắng, Thiệu Nguyên, Thiệu Hóa, Thanh Hóa
                                 </p>
                                 <img src={QRGroom} alt="groom" className="img-qr" loading="lazy"/>
                             </div>
@@ -136,7 +136,7 @@ function HelloSection({guest}) {
                                     <br/>
                                     Mẹ: Lê Thị Lại
                                     <br/>
-                                    Thiệu Công, Thiệu Hóa, Thanh Hóa
+                                    Minh Thượng, Thiệu Công, Thiệu Hóa, Thanh Hóa
                                 </p>
                                 <img src={QRBride} alt="bride" className="img-qr" loading="lazy"/>
                             </div>
