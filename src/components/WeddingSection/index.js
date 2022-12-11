@@ -13,7 +13,7 @@ function WeddingSection() {
                         title="Lễ Thành Hôn"
                         time="10:30"
                         date="Ngày 24/12/2022 (Dương lịch) <br/> Ngày 02/12/2022 (Âm lịch)"
-                        description="TẠI NHÀ TRAI <br/> Nguyên Thắng, Thiệu Nguyên, Thiệu Hóa, Thanh Hóa"
+                        description="TẠI NHÀ TRAI <br/> Nguyên Thắng, Thiệu Nguyên, Thiệu Hóa, T.Hóa"
                     />
                 </div>
                 <ButtonLive/>
@@ -38,13 +38,13 @@ function WeddingSection() {
                                 title="Lễ Nạp tài"
                                 time="07:30"
                                 date="Ngày 23/12/2022 (Dương lịch) <br/> Ngày 01/12/2022 (Âm lịch)"
-                                description="TẠI NHÀ GÁI <br/> Minh Thượng, Thiệu Công, Thiệu Hóa, Thanh Hóa"
+                                description="TẠI NHÀ GÁI <br/> Minh Thượng, Thiệu Công, Thiệu Hóa, T. Hóa"
                             />
                             <WeddingInfoBox
                                 title="Lễ thành hôn"
                                 time="08:30"
                                 date="Ngày 24/12/2022 (Dương lịch) <br/> Ngày 02/12/2022 (Âm lịch)"
-                                description="TẠI NHÀ TRAI <br/> Nguyên Thắng, Thiệu Nguyên, Thiệu Hóa, Thanh Hóa"
+                                description="TẠI NHÀ TRAI <br/> Nguyên Thắng, Thiệu Nguyên, Thiệu Hóa, T. Hóa"
                             />
                         </div>
 
