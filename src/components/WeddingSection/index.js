@@ -1,25 +1,24 @@
 import React, {Fragment} from 'react';
 
 import WeddingInfoBox from './WeddingInfoBox';
-import ButtonLive from './ButtonLive';
 import {styWrapper} from './styles';
 
 function WeddingSection() {
-    const renderGuestInfo = () => {
-        return (
-            <Fragment>
-                <div className="col-md-8 col-md-offset-4">
-                    <WeddingInfoBox
-                        title="Lễ Thành Hôn"
-                        time="10:30"
-                        date="Ngày 24/12/2022 (Dương lịch) <br/> Ngày 02/12/2022 (Âm lịch)"
-                        description="TẠI NHÀ TRAI <br/> Nguyên Thắng, Thiệu Nguyên, Thiệu Hóa, T.Hóa"
-                    />
-                </div>
-                <ButtonLive/>
-            </Fragment>
-        );
-    };
+    // const renderGuestInfo = () => {
+    //     return (
+    //         <Fragment>
+    //             <div className="col-md-8 col-md-offset-4">
+    //                 <WeddingInfoBox
+    //                     title="Lễ Thành Hôn"
+    //                     time="10:30"
+    //                     date="Ngày 24/12/2022 (Dương lịch) <br/> Ngày 02/12/2022 (Âm lịch)"
+    //                     description="TẠI NHÀ TRAI <br/> Nguyên Thắng, Thiệu Nguyên, Thiệu Hóa, T.Hóa"
+    //                 />
+    //             </div>
+    //             <ButtonLive/>
+    //         </Fragment>
+    //     );
+    // };
 
     return (
         <Fragment>

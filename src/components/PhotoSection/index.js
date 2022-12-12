@@ -7,14 +7,14 @@ function PhotoSection() {
     // const renderYoutubeVideo = () => {
     //   return (
     //     <iframe
-    //       title="Pre-Wedding Dinda & Indra"
+    //       title="Wedding Mr.Toan & Mrs.Phuong"
     //       width="100%"
     //       height="360px"
-    //       src="https://www.youtube.com/embed/75w39OY7N-k"
+    //       src="https://www.youtube.com/watch?v=KrXuD1YN2Wk"
     //       frameBorder="0"
     //       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     //       allowFullScreen
-    //     ></iframe>
+    //     />
     //   );
     // };
 
