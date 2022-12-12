@@ -71,6 +71,7 @@ function ConfirmationSection({guest}) {
                             <label>Hình thức di chuyển</label>
                             <select style={{backgroundColor: '#828282'}}
                                     className="form-control" placeholder="Transport" id="transport">
+                                <option value="-1">Có việc riêng, không thể tham gia được</option>
                                 <option value="0">Di chuyển cùng đoàn</option>
                                 <option value="1">Tự di chuyển</option>
                             </select>
