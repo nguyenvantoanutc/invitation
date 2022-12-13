@@ -27,7 +27,7 @@ function FooterSection({guest}) {
                     <div className="row copyright">
                         <div className="col-md-12 text-center">
                             <p>
-                                <small className="block">&copy; 2022 Mr.Toan & Mrs.Phương. All Rights Reserved.</small>
+                                <small className="block">&copy; 2022 Mr.Toan & Ms.Phương. All Rights Reserved.</small>
                                 <small className="block">
                                     Covid-19 Icon by{' '}
                                     <a href="https://www.flaticon.com/packs/covid-protection-measures-5" target="_blank"

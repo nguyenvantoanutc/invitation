@@ -84,7 +84,7 @@ export const wishlist = [
     },
     {
         name: 'Quy Nguyễn',
-        infoName: 'Bạn Mrs. Phương',
+        infoName: 'Bạn Ms. Phương',
         fbLink: 'https://www.facebook.com/nguyenthibichquy.96',
         description: `Chúc mừng hạnh phúc hai bạn và gia đình! Mình cảm thấy thật may mắn khi chúng ta là bạn của nhau và hôm nay mình lại có cơ hội được đứng ở đây để chúc phúc cho cuộc hôn nhân của bạn! <br/>Thật ra mình cũng  không biết chúc gì hơn, chỉ chúc hai bạn trong cuộc sống lúc nào cũng thuận vợ, thuận chồng. Chúc hai bạn luôn hạnh phúc, đầu bạc răng long, con cái đề huề! Happy wedding!<br/>Phải thật hạnh phúc nhé bạn thân!`,
         image: imgBichQuy,
@@ -105,7 +105,7 @@ export const wishlist = [
     },
     {
         name: 'Phương Chi Lê',
-        infoName: 'Chị Mrs. Phương',
+        infoName: 'Chị Ms. Phương',
         fbLink: 'https://www.facebook.com/phuongchi.le.94',
         description: `Congratulations on your wedding, sister. You now has someone with you to go to the end of your life. Wish you always happy and happy with your wonderful husband`,
         image: imgLeChi,
@@ -140,7 +140,7 @@ export const wishlist = [
     },
     {
         name: 'Nguyễn Lan',
-        infoName: 'Bạn Mrs. Phương',
+        infoName: 'Bạn Ms. Phương',
         fbLink: 'https://www.facebook.com/profile.php?id=100006929224343',
         description: `Thật vui vì cuối cùng ngày này cũng tới với bạn. Cuối cùng thì bạn đã dừng chân tại bến đỗ, mảnh ghép hoàn hảo của cuộc đời mình. Tớ  không biết nói gì hơn, thành tâm chúc hai bạn hạnh phúc và hạnh phúc, sống một cuộc sống vui vẻ cùng nhau mãi mãi. 
                     <br/>Happy wedding !`,

@@ -34,7 +34,7 @@ function LocationSection() {
                                         allowFullScreen
                                         aria-hidden="false"
                                         tabIndex="0"
-                                        title="Google Maps - Mr.Toan & Mrs.Phuong Wedding"
+                                        title="Google Maps - Mr.Toan & Ms.Phuong Wedding"
                                     />
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ function LocationSection() {
                                         allowFullScreen
                                         aria-hidden="false"
                                         tabIndex="0"
-                                        title="Google Maps - Mr.Toan & Mrs.Phuong Wedding"
+                                        title="Google Maps - Mr.Toan & Ms.Phuong Wedding"
                                     />
                                 </div>
                             </div>

@@ -67,7 +67,7 @@ function WelcomeSection({guest, onClickDetail}) {
                         <div className="col-md-8 col-md-offset-2 text-center">
                             <img src={WeddingImg} alt="wedding-dinda-indra"/>
                             <h4 className="sub-title">The Wedding of</h4>
-                            <h1 className="title">Mr.Toan &amp; Mrs.Phuong</h1>
+                            <h1 className="title">Mr.Toan &amp; Ms.Phuong</h1>
                             <h1 className="title" style={{fontSize: '35px'}}>24-12-2022</h1>
                             <div className={guest ? 'margin__bottom' : ''}>
                                 <CountContainer/>

@@ -23,7 +23,7 @@ function HelloSection({guest}) {
                                 className={(guest && guest.code !== 'Family') ? "col-md-6 col-sm-6 pd-invitation" : "col-md-12 col-sm-12"}>
                                 <div className="invitation text-center">
                                     <h2 className="main-font">Wedding</h2>
-                                    <h3 className="sub-title main-font hs">Mr.Toan &amp; Mrs.Phuong</h3>
+                                    <h3 className="sub-title main-font hs">Mr.Toan &amp; Ms.Phuong</h3>
                                     <p className="info uppercase">
                                         Hôn lễ được tổ chức vào hồi 08h30
                                     </p>
@@ -46,7 +46,7 @@ function HelloSection({guest}) {
                                 <div className="col-md-6 col-sm-6 pd-invitation">
                                     <div className="invitation text-center">
                                         <h2 className="main-font">Invitation</h2>
-                                        <h3 className="sub-title main-font hs">Mr.Toan &amp; Mrs.Phuong</h3>
+                                        <h3 className="sub-title main-font hs">Mr.Toan &amp; Ms.Phuong</h3>
                                         <p className="info">
                                             Trân trọng kính mời <span> {guest ? guest.name : "Bạn"}</span> đến dự bữa
                                             tiệc
