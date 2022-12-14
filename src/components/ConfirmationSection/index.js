@@ -57,31 +57,33 @@ function ConfirmationSection({guest}) {
                             đầy đủ các thông tin dưới đây
                         </p>
                         {(guest.code === 'Anonymous' || guest.code === 'Family') && (
-                            <div className="form-group">
-                                <label className="fh5co-nav-white">Tên khách mời</label>
+                            <div className="form-group" style={{ textAlign: 'left'}}>
+                                <label>Tên khách mời</label>
                                 <input type="text" className="form-control" id="name"
                                        placeholder="Name"/>
                             </div>)}
-                        <div className="form-group">
-                            <label className="fh5co-nav-white">Số thành viên tham dự</label>
+                        <div className="form-group" style={{ textAlign: 'left'}}>
+                            <label>Số thành viên tham dự</label>
                             <input type="number" className="form-control" id="member"
                                    placeholder="Member Number"/>
                         </div>
-                        <div className="form-group">
+                        <div className="form-group" style={{ textAlign: 'left'}}>
                             <label>Hình thức di chuyển</label>
                             <select style={{backgroundColor: '#828282'}}
                                     className="form-control" placeholder="Transport" id="transport">
-                                <option value="0">Di chuyển cùng đoàn</option>
+                                <option value="0">Di chuyển cùng đoàn vào 24/12/2022</option>
                                 <option value="1">Tự di chuyển</option>
                                 <option value="-1">Có việc riêng, không thể tham gia được</option>
                             </select>
                         </div>
-                        <div className="form-group">
-                            <label className="fh5co-nav-white">Số điện thoại liên hệ</label>
+                        <div className="form-group" style={{ textAlign: 'left'}}>
+                            <label style={{
+                                color: 'rgba(255,255,255,0.8) !important'
+                            }}>Số điện thoại liên hệ</label>
                             <input type="text" className="form-control" id="phone"
                                    placeholder="Phone"/>
                         </div>
-                        <div className="form-group">
+                        <div className="form-group" style={{ textAlign: 'left'}}>
                             <label>Lời chúc mừng đến cô dâu/chú rể</label>
                             <textarea type="text" className="form-control" id="wish"
                                       placeholder="Wish"/>
