@@ -27,7 +27,7 @@ function ConfirmationSection({guest}) {
             params: {
                 code: guest.code,
                 name: (guest.code !== 'Anonymous' && guest.code !== 'Family') ? guest.name : name,
-                member: member,
+                member: transport === '-1' ? '0' : member,
                 transport: transport,
                 phone: phone,
                 wish: wish,
