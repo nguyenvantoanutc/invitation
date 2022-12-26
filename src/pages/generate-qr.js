@@ -11,7 +11,7 @@ function GenerateQRPage() {
   const finalData = data.filter((guest, index) => index >= 177);
 
   const renderContent = () => {
-    if (loading) return <div>Menyiapkan data..</div>;
+    if (loading) return <div>Loading data..</div>;
 
     return finalData.map((guest) => {
       return <QRCard name={guest.name} code={guest.code} desc={guest.desc} />;
